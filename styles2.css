@@ -1,0 +1,81 @@
+/* ======== RESET DAN DASAR ======== */
+body {
+  margin: 0;
+  font-family: "Baloo 2", Arial, sans-serif;
+  background-color: black;
+  color: white;
+  line-height: 1.7;
+}
+
+/* ======== BAGIAN ARTIKEL ======== */
+.intro-section {
+  position: relative;
+  padding: 4rem 2rem 6rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-section h1 {
+  text-align: center;
+  color: #ffd369;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.intro-section p {
+  text-align: justify;
+  margin-bottom: 1.2rem;
+}
+
+/* ======== BACK BUTTON ======== */
+.back-button {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background: #f4a261;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.back-button:hover {
+  background: #e76f51;
+}
+
+/* ======== NAVBAR BAWAH ======== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  border-top: 2px solid #444;
+}
+
+.bottom-nav a {
+  color: #f4a261;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.bottom-nav a:hover {
+  color: #ffd369;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .intro-section {
+    padding: 2rem 1rem 5rem;
+  }
+
+  .bottom-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

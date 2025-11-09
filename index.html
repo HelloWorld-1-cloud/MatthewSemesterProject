@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BODY PLUS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Basic reset */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        line-height: 1.4;
+      }
+      a {
+        color: #000;
+      }
+      /* Header */
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .logo .logo-icon {
+        margin-right: 10px;
+        font-size: 2rem;
+      }
+      .tagline {
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+      /* Main content */
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+      }
+      .hero {
+        flex: 1 1 300px;
+        min-width: 300px;
+        position: relative;
+        text-align: center;
+        margin: 20px;
+      }
+      .hero h1 {
+        font-size: 4rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px #fff;
+        z-index: 2;
+        position: relative;
+      }
+      .silhouette {
+        position: absolute;
+        bottom: 0;
+        width: auto;
+        height: 80%;
+        filter: invert(100%);
+        opacity: 0.8;
+ 
+      }
+      /* Arrow navigation */
+      .arrow-nav {
+        flex: 1 1 250px;
+        min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+      .arrow-nav a {
+        display: inline-block;
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px 30px;
+        margin: 10px 0;
+        position: relative;
+        min-width: 200px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      }
+      .arrow-nav a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid #fff;
+      }
+      .arrow-nav a:focus {
+        outline: 3px solid #fff;
+      }
+      /* Bottom navigation */
+      .bottom-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+      .bottom-nav a {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 25px;
+        border: 2px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+      }
+      .bottom-nav a:focus {
+        outline: 3px solid #fff;
+      }
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 3rem;
+        }
+        .arrow-nav a {
+          padding: 12px 20px;
+        }
+      }
+      @media (max-width: 480px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+        .tagline {
+          margin-top: 10px;
+          font-size: 0.9rem;
+        }
+        .arrow-nav {
+          flex: 1 1 100%;
+          align-items: stretch;
+        }
+        .arrow-nav a {
+          text-align: center;
+          margin: 5px 0;
+        }
+        .bottom-nav {
+          flex-direction: column;
+          align-items: center;
+        }
+        .bottom-nav a {
+          width: 80%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+   </header>
+    <main>
+    
+      <div class="hero">
+      <h1>SIS Articles</h1>
+       
+       
+    <footer>
+      <nav class="bottom-nav" aria-label="Secondary navigation">
+        <a href="About me.html">About me</a>
+        <a href="Artikel.html">Artikel Ilmiah Populer</a>
+      </nav>
+    </footer>
+  </body>
+</html>
